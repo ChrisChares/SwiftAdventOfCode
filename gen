@@ -3,5 +3,5 @@ rm -rf Day*;
 for i in {1..25}; do 
 name=Day$i;
 echo $name;
-(mkdir $name && cd $name && swift package init --type executable && ln -s $(PWD)/../Shared.swift Sources/Shared.swift && swift package generate-xcodeproj)
+(mkdir $name && cd $name && swift package init --type executable && swift package generate-xcodeproj && ln -s $(PWD)/../Shared/Sources/Shared.swift Sources/Shared.swift)
 done
