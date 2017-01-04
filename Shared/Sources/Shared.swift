@@ -4,3 +4,7 @@
 	Good candiates for code here include generic errors or 
 	reusable parsing logic.
 */
+
+public func testSharedCode() {
+	print("Hello daniel")
+}
