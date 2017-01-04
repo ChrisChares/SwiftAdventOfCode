@@ -1,0 +1,7 @@
+#!/bin/bash
+rm -rf Day*;
+for i in {1..25}; do 
+name=Day$i;
+echo $name;
+(mkdir $name && cd $name && swift package init --type executable && ln -s $(PWD)/../Shared.swift Sources/Shared.swift && swift package generate-xcodeproj)
+done
